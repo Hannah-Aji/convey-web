@@ -1,0 +1,19 @@
+
+
+/* src/SearchBar.css */
+.search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-button {
+    margin-left: 10px;
+    animation: pulse 0.5s;
+  }
+
+  
+  
+  
