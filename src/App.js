@@ -1,3 +1,25 @@
+
+// src/App.js
+import React from 'react';
+import Sidebar from './SideBar';
+import './App.css'; // We'll create this file for additional styling
+
+const App = () => {
+  return (
+    <div className="app-container">
+      <Sidebar />
+      <div className="main-content">
+        <h2>Welcome to Convey</h2>
+        <p>This is the main content area.</p>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+
+
+/*
 import React from 'react';
 import './App.css';
 import SearchBar from './SearchBar';
@@ -59,3 +81,5 @@ const handlePulse = (event) => {
 };
 
 export default App;
+
+*/

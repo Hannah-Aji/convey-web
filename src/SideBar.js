@@ -1,3 +1,21 @@
+
+
+// src/Sidebar.js
+import React from 'react';
+import './Sidebar.css'; // We'll create this file for styling
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <h1>CONVEY</h1>
+    </div>
+  );
+};
+
+export default Sidebar;
+
+
+/*
 import React from 'react';
 
 function Sidebar() {
@@ -63,3 +81,4 @@ function Sidebar() {
 }
 
 export default Sidebar;
+*/
