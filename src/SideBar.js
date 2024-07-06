@@ -7,7 +7,7 @@ import './Sidebar.css'; // We'll create this file for styling
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h1>CONVEY.</h1>
+      <h1>Convey.</h1>
       <h2>Get started</h2>
       <div style={{ paddingTop: '2.5px' }}>
         <ul className="fade-in-list">
