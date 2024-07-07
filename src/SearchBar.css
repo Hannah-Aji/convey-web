@@ -14,8 +14,7 @@
 }
 
 .search-bar:focus-within {
-    border-color: rgba(122, 249, 55, 0.2); /* Border color when container or input is focused */
-    border: 2px solid;
+    border-color: #007bff; /* Border color when container or input is focused */
     outline: none; /* Remove default focus outline */
   }
   
