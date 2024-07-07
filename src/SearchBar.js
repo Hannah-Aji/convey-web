@@ -1,36 +1,33 @@
 
+import React, { useRef } from 'react';
+import 'font-awesome/css/font-awesome.min.css';
+import './SearchBar.css';
 
-// src/searchBar.js
-import React, { useState } from 'react';
-import './SearchBar.css'; // Import your CSS file
 
-const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
+function SearchBar() {
 
-  const handleInputChange = (e) => {
-    setQuery(e.target.value);
-  };
+  const buttonRef = useRef(null);
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    onSearch(query);
+  const handleButtonClick = () => {
+    buttonRef.current.classList.add('pulse');
+    setTimeout(() => {
+      buttonRef.current.classList.remove('pulse');
+    }, 1000); // 1000ms is the duration of the animation
   };
 
   return (
-    <form className="d-flex" onSubmit={handleSearch}>
+    <div className="search-bar">
       <input
-        className="form-control me-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-        value={query}
-        onChange={handleInputChange}
+         type="text"
+        placeholder="Search for a city..."
       />
-      <button className="btn btn-outline-success" type="submit">
-        Search
+      <button
+        ref={buttonRef}
+        onClick={handleButtonClick}>
+        <i className="fa fa-location-arrow"></i>
       </button>
-    </form>
+    </div>
   );
-};
+}
 
 export default SearchBar;

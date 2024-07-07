@@ -3,6 +3,10 @@
 // src/Sidebar.js
 import React from 'react';
 import './Sidebar.css'; // We'll create this file for styling
+import 'font-awesome/css/font-awesome.min.css';
+
+
+
 
 const Sidebar = () => {
   return (
@@ -11,10 +15,10 @@ const Sidebar = () => {
       <h2>Get started</h2>
       <div style={{ paddingTop: '2.5px' }}>
         <ul className="fade-in-list">
-          <li><a href="#home">Topicals</a></li>
-          <li><a href="#services">Camry cars</a></li>
-          <li><a href="#about">Elephant</a></li>
-          <li><a href="#contact">Microsoft</a></li>
+          <li><a href="#home">Mykonos, Greece</a></li>
+          <li><a href="#services">Lagos, Nigeria</a></li>
+          <li><a href="#about">Dublin, Ireland</a></li>
+          <li><a href="#contact">Bristol, England</a></li>
         </ul>
       </div>
       <div className="sidebar-footer">

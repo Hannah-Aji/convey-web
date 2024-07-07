@@ -35,32 +35,53 @@
   height: 100%;
 }
 
-.btn {
-  background-color: #fefef1; /* Blue background */
-  border: 1px solid #333; /* White border */
-  color: #333; /* White text */
-  padding: 8px 9px; /* Some padding */
-  font-size: 9.5pt;
-  border-radius: 8px;
-  margin-left: 2.5px;
-  cursor: pointer; /* Mouse pointer on hover */
-  font-family:  Helvetica;
-  transition: transform 0.3s ease-out;
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: orangered;
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: #007bff;
   color: white;
   border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 16px;
+  border-radius: 3px;
 }
 
-.btn.pulse {
-  animation: pulse 0.5s;
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .pulse {
-  animation: pulse 0.5s;
+  animation: pulse 1s;
 }
 
 @media (max-width: 768px) {
