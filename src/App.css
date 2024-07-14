@@ -1,3 +1,4 @@
+
 /* src/App.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
@@ -7,7 +8,7 @@
 }
 
 .main-content {
-  margin-left: 225px; /* Same as the width of the sidebar */
+  margin-left: 205px; /* Same as the width of the sidebar */
   padding: 20px;
   width: 100%;
   transition: margin-left 0.3s ease;
@@ -31,7 +32,7 @@
 
 
 .body-content {
-  padding: 10px;
+  padding: 0px;
   height: 100%;
 }
 

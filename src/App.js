@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Sidebar from './SideBar';
 import SearchBar from './SearchBar'; 
+import GridList from './GridList';
 import FloatingButton from './FloatingButton';
 import './App.css';
 
@@ -27,9 +28,12 @@ const App = () => {
       <h2>Welcome to Convey</h2>
       <p>This is the main content area.</p>
       <div style={{ paddingTop: '10px' }}>
-        <p>
-          Following Bubble Boy, Gyllenhaal starred opposite Dustin Hoffman, Susan Sarandon and Ellen Pompeo in Moonlight Mile (2002), as a young man coping with the death of his fiancée and the grief of her parents. The story, which received mixed reviews, is loosely based on writer-director Brad Silberling's personal experiences following the murder of his girlfriend, Rebecca Schaeffer.
-        </p>
+        <GridList />
+        <div style= {{paddingTop: '20px'}} >
+          <p>
+            Following Bubble Boy, Gyllenhaal starred opposite Dustin Hoffman, Susan Sarandon and Ellen Pompeo in Moonlight Mile (2002), as a young man coping with the death of his fiancée and the grief of her parents. The story, which received mixed reviews, is loosely based on writer-director Brad Silberling's personal experiences following the murder of his girlfriend, Rebecca Schaeffer.
+          </p>
+        </div>
       </div>
     </div>
   ) : null;
